@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="helloWorld">
+<head>
+	<title>Angular Js</title>
+	<script src="angular.js"></script>
+	<script type="text/javascript">
+		angular.module("helloWorld", []);
+		angular.module("helloWorld").controller("helloWorldCtrl", function($scope){
+			$scope.massage = "Hello World"
+		})
+
+
+	</script>
+</head>
+<body>
+	<div ng-controller = "helloWorldCtrl">
+		{{massage}}
+	</div>
+
+</body>
+</html>
